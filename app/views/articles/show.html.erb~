@@ -8,9 +8,10 @@
   <%= @article.text %>
 </p>
 
-<h2>Comments from other users</h2>
-  <%= render @article.comments %> 
-
+<% if !@article.comments.empty? %>
+  <h2>Comments from other users</h2>
+    <%= render @article.comments %> 
+<% end %>
 
 
 <h2>Add a comment</h2>
