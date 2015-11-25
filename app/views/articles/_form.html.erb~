@@ -8,7 +8,7 @@
       </h2>
       <ul>
         <% @article.errors.full_messages.each do |msg| %>
-          <li><%= msg %> and it sucks, really.</li> 
+          <li><%= msg %> and it sucks.</li> 
         <% end %>
       </ul>
     </div>
