@@ -5,6 +5,9 @@
 
 <p>
   <strong>Text:</strong>
+  <% if (@article.text =~ /\w/).nil? %>
+     Article is empty.   
+  <% end %>
   <%= @article.text %>
 </p>
 
